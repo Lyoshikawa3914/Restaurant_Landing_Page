@@ -4,9 +4,11 @@
 }
 
 
+
 @media screen and (min-width: 400px){
     
     .navContainer {
+        visibility: hidden;
         z-index: 1;
         position: fixed;
         display: flex;
