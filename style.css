@@ -2,50 +2,21 @@
     padding: 0;
     margin: 0;
 }
-.navContainer {
+
+
     
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 8%;
-    background-color: lightgrey;
-
-    justify-content: space-between;
-}
-
-.navContainer .logo {
-    align-self: flex-start;
-    border-color: blue;
-    border-radius: 2px;
-    border: solid;
-    align-self: center;
-    margin-left: 0.5em;
-    font-size: 30px;
-}
-
-.navContainer ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    
-
-    border-color: blue;
-    border-radius: 2px;
-    border: solid;
-    
-}
-
-.navContainer ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
+footer {
+    margin-bottom: 20%;
+    }
 
 @media screen and (max-width: 450px){
+    .navContainer {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        height: 0;
+    }
+
     .hiddenNav {
         z-index: 1;
         position: fixed;
@@ -54,145 +25,43 @@
         width: 100%;
         height: 10%;
         bottom: 0;
-        background-color: lightgrey;
+        background-color:  #1F2937;
         justify-content: space-between;
     }
 
     .hiddenNav .logo {
         align-self: flex-start;
-        border-color: blue;
-        border-radius: 2px;
         border: solid;
         align-self: center;
+        padding: 4px;
         margin-left: 0.5em;
         font-size: 30px;
+        color:  white;
     }
-    
+        
     .hiddenNav ul {
         list-style: none;
         display: flex;
         justify-content: space-between;
         gap: 8px;
-        
-
-        border-color: blue;
         border-radius: 2px;
         border: solid;
-        
     }
 
-    .hiddenNav ul li {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .navContainer {
-        visibility: hidden;
-        z-index: 1;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 8%;
-        background-color: lightgrey;
-
-        justify-content: space-between;
-    }
-
-    .navContainer .logo {
-        align-self: flex-start;
-        border-color: blue;
-        border-radius: 2px;
-        border: solid;
-        align-self: center;
-        margin-left: 0.5em;
-        font-size: 30px;.navContainer {
-            visibility: hidden;
-            z-index: 1;
-            position: fixed;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 8%;
-            background-color: lightgrey;
-    
-            justify-content: space-between;
-        }
-    
-        .navContainer .logo {
-            align-self: flex-start;
-            border-color: blue;
-            border-radius: 2px;
-            border: solid;
-            align-self: center;
-            margin-left: 0.5em;
-            font-size: 30px;
-        }
-        
-        .navContainer ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-            
-    
-            border-color: blue;
-            border-radius: 2px;
-            border: solid;
-            
-        }
-    
-        .navContainer ul li {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-    
-    .navContainer ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
-        
-
-        border-color: blue;
-        border-radius: 2px;
-        border: solid;
-        
-    }
-
-    .navContainer ul li {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
     .heroContainer {
-        background-color: #1F2937;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        gap: 1px;
+        height: 100%;
+        background-color: #1F2937;
+    }    
+    .heroContainer img {
         height: 90%;
     }
-
-    .heroContainer img {
-        align-self: center;
-        
-    }
-
     .heroContainer .heroInfo {
+        padding: 10px;
         color: white;
-    }
-    
-    
-    .reviewsContainer {
-        background-color: aquamarine;
+        padding-bottom: 20%;
     }
 
-    footer {
-        margin-bottom: 20%;
-    }
 }
