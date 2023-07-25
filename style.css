@@ -2,11 +2,91 @@
     padding: 0;
     margin: 0;
 }
-
-
-
-@media screen and (min-width: 400px){
+.navContainer {
     
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8%;
+    background-color: lightgrey;
+
+    justify-content: space-between;
+}
+
+.navContainer .logo {
+    align-self: flex-start;
+    border-color: blue;
+    border-radius: 2px;
+    border: solid;
+    align-self: center;
+    margin-left: 0.5em;
+    font-size: 30px;
+}
+
+.navContainer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    
+
+    border-color: blue;
+    border-radius: 2px;
+    border: solid;
+    
+}
+
+.navContainer ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 450px){
+    .hiddenNav {
+        z-index: 1;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        bottom: 0;
+        background-color: lightgrey;
+        justify-content: space-between;
+    }
+
+    .hiddenNav .logo {
+        align-self: flex-start;
+        border-color: blue;
+        border-radius: 2px;
+        border: solid;
+        align-self: center;
+        margin-left: 0.5em;
+        font-size: 30px;
+    }
+    
+    .hiddenNav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        
+
+        border-color: blue;
+        border-radius: 2px;
+        border: solid;
+        
+    }
+
+    .hiddenNav ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .navContainer {
         visibility: hidden;
         z-index: 1;
@@ -27,7 +107,47 @@
         border: solid;
         align-self: center;
         margin-left: 0.5em;
-        font-size: 30px;
+        font-size: 30px;.navContainer {
+            visibility: hidden;
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 8%;
+            background-color: lightgrey;
+    
+            justify-content: space-between;
+        }
+    
+        .navContainer .logo {
+            align-self: flex-start;
+            border-color: blue;
+            border-radius: 2px;
+            border: solid;
+            align-self: center;
+            margin-left: 0.5em;
+            font-size: 30px;
+        }
+        
+        .navContainer ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            
+    
+            border-color: blue;
+            border-radius: 2px;
+            border: solid;
+            
+        }
+    
+        .navContainer ul li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     
     .navContainer ul {
@@ -51,16 +171,28 @@
     
     .heroContainer {
         background-color: #1F2937;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 1px;
+        height: 90%;
     }
+
+    .heroContainer img {
+        align-self: center;
+        
+    }
+
     .heroContainer .heroInfo {
         color: white;
     }
     
-    .infoContainer {
-        
-    }
     
     .reviewsContainer {
         background-color: aquamarine;
+    }
+
+    footer {
+        margin-bottom: 20%;
     }
 }
