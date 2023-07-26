@@ -51,17 +51,32 @@ footer {
 
     .heroContainer {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 100%;
         background-color: #1F2937;
-    }    
+    } 
+    
+    .heroContainer .logoLanding {
+        z-index: 1;
+        position: absolute;
+        align-self: center;
+        top: 30%;
+        background-color: rgba(0, 0, 0, .25);
+        
+    }
+
+    .heroContainer .logoLanding h1 {
+        color: white;
+        font-size: 25px;
+        padding: 15px;
+        
+    }
     .heroContainer img {
-        height: 90%;
+        height: 60%;
     }
     .heroContainer .heroInfo {
-        padding: 10px;
-        color: white;
-        padding-bottom: 20%;
+        background-color: white;
+        padding: 20px;
     }
 
 }
