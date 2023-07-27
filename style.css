@@ -77,6 +77,16 @@ footer {
     .heroContainer .heroInfo {
         background-color: white;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .heroContainer .heroInfo h2 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
 }
