@@ -49,6 +49,18 @@ footer {
         flex-direction: column;
         border-color: #1F2937;
         border: none;
+        cursor: pointer;
+     }
+    .hiddenNav  .isActive #bar3 {
+        transform: translate(0, -300%) rotate(45deg);
+     }
+
+    .hiddenNav .isActive #bar2{
+        opacity: 0;
+     }
+
+    .hiddenNav .isActive #bar1{
+        transform: translate(0, 300%) rotate(135deg)
      }
 
     .bar {
@@ -56,6 +68,7 @@ footer {
         background: white;
         width: 90%;
         height: 5px;
+        transition: 0.4s;
         
      }
 
