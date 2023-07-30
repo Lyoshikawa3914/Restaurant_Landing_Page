@@ -8,10 +8,6 @@ const heroContainer = document.querySelector('.heroContainer');
 const menuContainer = document.querySelector('.menuContainer');
 const footer = document.querySelector('footer');
 
-// bar3.style.cssText = 'transform: translate(0, -300%) rotate(45deg)';
-// bar1.style.cssText = 'transform: translate(0, 300%) rotate(135deg)';
-// bar2.style.cssText = 'visibility: hidden';
-
 const menuButton = document.querySelector('.hamburger');
 
 menuButton.addEventListener('click', function() {
@@ -21,7 +17,37 @@ menuButton.addEventListener('click', function() {
     navMenu.classList.toggle('isActive');
 
     body.classList.toggle('isActive');
+    heroContainer.classList.toggle('isActive');
+    menuContainer.classList.toggle('isActive');
 });
+
+
+const heroAnchor = document.querySelector('#heroAnchor');
+const menuAnchor = document.querySelector('#menuAnchor');
+
+
+
+heroAnchor.addEventListener('click', function(){
+    navMenu.classList.remove('isActive');
+    menuButton.classList.remove('isActive');
+    bar2.classList.remove('isActive');
+    bar3.classList.remove('isActive');
+    
+    heroContainer.classList.remove('isActive');
+    
+});
+
+menuAnchor.addEventListener('click', function(){
+    navMenu.classList.remove('isActive');
+    menuButton.classList.remove('isActive');
+    bar2.classList.remove('isActive');
+    bar3.classList.remove('isActive');
+    
+    
+    menuContainer.classList.remove('isActive');
+});
+
+
 
 
 

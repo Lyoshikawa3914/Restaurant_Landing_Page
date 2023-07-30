@@ -3,8 +3,6 @@
     margin: 0;
 }
 
-
-    
 footer {
     margin-bottom: 20%;
     }
@@ -51,6 +49,7 @@ footer {
         font-size: 30px;
         align-items: center;
     }
+
 
     .hiddenNav {
         z-index: 1;
@@ -128,16 +127,15 @@ footer {
         display: flex;
         flex-direction: column;
         height: 90%;
-        padding-bottom: 0%;
-        
     } 
     .heroContainer.isActive {
-       
-        
+        transition: all 0.4s ease;
+        filter: brightness(25%);
+         
     }
     
     .heroContainer .logoLanding {
-        z-index: 1;
+        /* z-index: 1; */
         position: absolute;
         align-self: center;
         top: 23%;
@@ -148,25 +146,25 @@ footer {
     .heroContainer .logoLanding h1 {
         color: white;
         font-size: 30px;
-        padding: 15px;
         
     }
 
     .heroContainer .logoLanding h1 span {
         border: solid;
         border-color: white;
-        padding: 4px;
+        
     }
     .heroContainer img {
         height: 60%;
     }
     .heroContainer .heroInfo {
+        height: 35%;
         background-color: white;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 24px;
+        gap: 30px;
+        
     }
 
     .heroContainer .heroInfo h2 {
@@ -189,13 +187,21 @@ footer {
         justify-content: space-between;
         align-items: center;
         gap: 24px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    .menuContainer.isActive {
+        transition: all 0.4s ease;
+        filter: brightness(25%);
+         
     }
 
     .menuContainer h2 {
         justify-self: center;
         color: black;
         font-size: 30px;
-        padding-top: 10px;
+        
     }
 
     .menuContainer p {
