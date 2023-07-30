@@ -11,10 +11,42 @@ footer {
 
 @media screen and (max-width: 450px){
     .navContainer {
-        visibility: hidden;
-        z-index: 1;
-        position: absolute;
-        height: 0;
+        left:100%;
+        height: 90%;
+        width: 55%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        z-index: 4;
+        position: fixed;
+        
+        background-color: #1F2937;
+        transition: 0.4s;
+    }
+    .navContainer.isActive {
+        left: 45%;
+        
+        
+        
+    }
+
+    .navContainer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: flex-end;
+        padding-bottom: 20%;
+        padding-right: 15%;
+        gap: 40px;
+
+    }
+    .navContainer li {
+        display: flex;
+        color: white;
+        font-size: 30px;
+        align-items: center;
     }
 
     .hiddenNav {
@@ -39,6 +71,7 @@ footer {
         color:  white;
     }
     .hiddenNav .hamburger {
+        z-index: 3;
         align-self: flex-end;
         display: block;
         height: 50px;
@@ -51,6 +84,7 @@ footer {
         border: none;
         cursor: pointer;
      }
+     /* This will transform the hamburger menu into into X's when clicked */
     .hiddenNav  .isActive #bar3 {
         transform: translate(0, -300%) rotate(45deg);
      }
