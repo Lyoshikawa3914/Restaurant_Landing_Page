@@ -28,23 +28,27 @@ const menuAnchor = document.querySelector('#menuAnchor');
 
 
 heroAnchor.addEventListener('click', function(){
-    navMenu.classList.remove('isActive');
-    menuButton.classList.remove('isActive');
-    bar2.classList.remove('isActive');
-    bar3.classList.remove('isActive');
+    navMenu.classList.toggle('isActive');
+    menuButton.classList.toggle('isActive');
+    bar2.classList.toggle('isActive');
+    bar3.classList.toggle('isActive');
     
-    heroContainer.classList.remove('isActive');
-    
+    heroContainer.classList.toggle('isActive');
+    menuContainer.classList.toggle('isActive');
+
+    body.classList.toggle('isActive');
 });
 
 menuAnchor.addEventListener('click', function(){
-    navMenu.classList.remove('isActive');
-    menuButton.classList.remove('isActive');
-    bar2.classList.remove('isActive');
-    bar3.classList.remove('isActive');
+    navMenu.classList.toggle('isActive');
+    menuButton.classList.toggle('isActive');
+    bar2.classList.toggle('isActive');
+    bar3.classList.toggle('isActive');
     
-    
-    menuContainer.classList.remove('isActive');
+    body.classList.toggle('isActive');
+    menuContainer.classList.toggle('isActive');
+    heroContainer.classList.toggle('isActive');
+
 });
 
 
