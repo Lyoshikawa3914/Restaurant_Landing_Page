@@ -10,6 +10,12 @@ footer {
     }
 
 @media screen and (max-width: 450px){
+    /* disables scrolling when someone presses hambruger menu */
+    body.isActive {
+        height: 100%;
+        overflow: hidden;
+    }
+
     .navContainer {
         left:100%;
         height: 90%;
@@ -25,10 +31,7 @@ footer {
         transition: 0.4s;
     }
     .navContainer.isActive {
-        left: 45%;
-        
-        
-        
+        left: 45%;  
     }
 
     .navContainer ul {
@@ -128,6 +131,10 @@ footer {
         padding-bottom: 0%;
         
     } 
+    .heroContainer.isActive {
+       
+        
+    }
     
     .heroContainer .logoLanding {
         z-index: 1;
@@ -175,7 +182,6 @@ footer {
     }
 
     .menuContainer {
-        
         padding: 20px;
         height: 90%;
         display: flex;
