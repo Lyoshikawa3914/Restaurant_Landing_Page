@@ -25,8 +25,6 @@ menuButton.addEventListener('click', function() {
 const heroAnchor = document.querySelector('#heroAnchor');
 const menuAnchor = document.querySelector('#menuAnchor');
 
-
-
 heroAnchor.addEventListener('click', function(){
     navMenu.classList.toggle('isActive');
     menuButton.classList.toggle('isActive');
