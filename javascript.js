@@ -19,6 +19,7 @@ menuButton.addEventListener('click', function() {
     body.classList.toggle('isActive');
     heroContainer.classList.toggle('isActive');
     menuContainer.classList.toggle('isActive');
+    footer.classList.toggle('isActive');
 });
 
 
@@ -35,6 +36,7 @@ heroAnchor.addEventListener('click', function(){
     menuContainer.classList.toggle('isActive');
 
     body.classList.toggle('isActive');
+    footer.classList.toggle('isActive');
 });
 
 menuAnchor.addEventListener('click', function(){
@@ -46,6 +48,7 @@ menuAnchor.addEventListener('click', function(){
     body.classList.toggle('isActive');
     menuContainer.classList.toggle('isActive');
     heroContainer.classList.toggle('isActive');
+    footer.classList.toggle('isActive');
 
 });
 
