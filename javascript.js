@@ -13,8 +13,11 @@ const menuButton = document.querySelector('.hamburger');
 const heroAnchor = document.querySelector('#heroAnchor');
 const menuAnchor = document.querySelector('#menuAnchor');
 
-const signUpButton = document.querySelector('.signUp')
+const signUpButton = document.querySelector('.signUp');
+const signInButton = document.querySelector('.signIn');
 const signUpFormContainer = document.querySelector('.signUpFormContainer');
+const signInFormContainer = document.querySelector('.signInFormContainer');
+
 
 menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('isActive');
@@ -29,6 +32,10 @@ menuButton.addEventListener('click', function() {
 
     if (signUpFormContainer.style.top == '4%') {
         signUpFormContainer.style.top = '-100%';
+    };
+
+    if (signInFormContainer.style.top == '4%') {
+        signInFormContainer.style.top = '-100%';
     };
 });
 
@@ -67,6 +74,11 @@ signUpButton.addEventListener('click', function() {
     signUpFormContainer.style.transition = '0.4s ease-in';
     
     signUpFormContainer.style.top = '4%';
+})
+signInButton.addEventListener('click', function() {
+    signInFormContainer.style.transition = '0.4s ease-in';
+    
+    signInFormContainer.style.top = '4%';
 })
 
 
