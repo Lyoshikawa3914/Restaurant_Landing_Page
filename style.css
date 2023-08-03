@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 footer {
@@ -23,17 +25,52 @@ footer {
         overflow: hidden;
     }
 
+    .signUpFormContainer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 8%;
+        top: -100%;
+        z-index: 5;
+        width: 85%;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 2%;
+        transition: none;
+        /* background-image: url(images/restaurant.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; */
+        
+    }
+
+
+    .signUpFormContainer .signUpForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .signUpFormContainer .signUpButtonContainer {
+        display: flex;
+        gap: 10px;
+        
+    }
+    .signUpFormContainer .signUpButtonContainer button{
+        width: 100%;
+        height: 20%;
+    }
+
     .navContainer {
         left:100%;
         height: 90%;
-        width: 55%;
-
+        width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         z-index: 4;
         position: fixed;
-        gap: 7em;
+        gap: 3.5em;
         background-color: #1F2937;
         transition: 0.4s;
         
@@ -67,19 +104,28 @@ footer {
     }
 
     .navContainer.isActive {
-        left: 45%;  
+        left: 30%;  
     }
 
     .navContainer ul {
         list-style: none;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+        
         gap: 40px;
+        
+    }
+
+    .navContainer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .navContainer li {
         display: flex;
+        
         color: white;
         font-size: 40px;
         transition: 0.2s ease-out;
@@ -88,6 +134,44 @@ footer {
     li:hover {
         color: lightblue;
         transition: all 0.2s ease;
+    }
+    .navContainer ul .signContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        
+    }
+    .navContainer ul .signContainer button{
+        font-size: 25px;
+        padding: 2px 7px;
+        
+    }
+    .navContainer ul .signContainer .signIn {
+        padding-top: 10px;
+    }
+    .navContainer ul .signContainer .signIn button{
+        
+        background: none;
+        color: white;
+        border-style: none;
+    }
+    .navContainer ul .signContainer .signIn button:hover{
+        background-color: white;
+        border-style: solid;
+        border-color: white;
+    }
+
+
+    .navContainer ul .signContainer .signUp button{
+        background-color: blueviolet;
+        border-color: blueviolet;
+        color: white;
+        
+        padding: 10px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        
+        }
     }
     
     .hiddenNav {
@@ -187,8 +271,8 @@ footer {
     }
 
     .heroContainer .logoLanding h1 {
-        color: white;
-        font-size: 30px;
+        color: mintcream;
+        font-size: 37px;
         
         
     }
@@ -330,7 +414,7 @@ footer {
     }
 
 
-    }
+    
 
 
     

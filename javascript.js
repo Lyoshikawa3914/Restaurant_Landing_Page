@@ -10,6 +10,12 @@ const footer = document.querySelector('footer');
 
 const menuButton = document.querySelector('.hamburger');
 
+const heroAnchor = document.querySelector('#heroAnchor');
+const menuAnchor = document.querySelector('#menuAnchor');
+
+const signUpButton = document.querySelector('.signUp')
+const signUpFormContainer = document.querySelector('.signUpFormContainer');
+
 menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('isActive');
     bar2.classList.toggle('isActive');
@@ -20,11 +26,12 @@ menuButton.addEventListener('click', function() {
     heroContainer.classList.toggle('isActive');
     menuContainer.classList.toggle('isActive');
     footer.classList.toggle('isActive');
+
+    if (signUpFormContainer.style.top == '4%') {
+        signUpFormContainer.style.top = '-100%';
+    };
 });
 
-
-const heroAnchor = document.querySelector('#heroAnchor');
-const menuAnchor = document.querySelector('#menuAnchor');
 
 heroAnchor.addEventListener('click', function(){
     navMenu.classList.toggle('isActive');
@@ -50,8 +57,17 @@ menuAnchor.addEventListener('click', function(){
     heroContainer.classList.toggle('isActive');
     footer.classList.toggle('isActive');
 
+    
+
 });
 
+
+
+signUpButton.addEventListener('click', function() {
+    signUpFormContainer.style.transition = '0.4s ease-in';
+    
+    signUpFormContainer.style.top = '4%';
+})
 
 
 
