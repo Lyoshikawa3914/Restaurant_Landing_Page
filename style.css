@@ -614,7 +614,8 @@ Desktop version
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 50px;
+        padding-right: 20px;
         
     }
 
@@ -641,6 +642,24 @@ Desktop version
 
     .topNav .navButtons .signContainer div button{
         font-size: 25px;
+
+    }
+
+    .topNav .navButtons .signContainer .signIn button{
+        font-size: 25px;
+        border: none;
+        background-color: transparent;
+        color: white;
+        
+    }
+
+    .topNav .navButtons .signContainer .signUp button{
+        font-size: 25px;
+        border: none;
+        padding: 8px;
+        border-radius: 3%;
+        
+        
     }
 
     .hiddenNav {
