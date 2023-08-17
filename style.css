@@ -722,7 +722,7 @@ Desktop version
         transform: translate(0, 300%) rotate(135deg)
      }
 
-    
+
 
     .hiddenNav2 {
         z-index: 2;
@@ -833,17 +833,17 @@ Desktop version
     }
 
     .heroContainer .heroInfo{
-        padding-bottom: 100px;
+        
         padding-left: 70px;
-        gap: 80px;
+        gap: 20px;
     }
 
     .heroContainer .heroInfo h2 {
-        padding-top: 10%;
-        font-size: 80px;
+        padding-top: 5%;
+        font-size: 60px;
     }
     .heroContainer .heroInfo p {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .menuContainer {
@@ -858,7 +858,19 @@ Desktop version
 
 @media screen and (min-width: 1024px) {
 
-    
+    .topNav .navButtons {
+        gap: 70px;
+        
+    }
+
+    .topNav .navButtons ul {
+        gap: 90px;    
+    }
+
+    .topNav .navButtons .signContainer {
+        gap: 70px;
+    }
+
     
     .hiddenNav {
         height: 0;
@@ -869,9 +881,30 @@ Desktop version
         width: 0;
         visibility: hidden;
     }
+
+    
     
 }
 
+@media screen and (min-width: 1200px) {
+    .heroContainer {
+        
+    }
+    .heroContainer .heroInfo{
+        
+        padding-left: 70px;
+        gap: 20px;
+    }
+
+    .heroContainer .heroInfo h2 {
+        padding-top: 5%;
+        font-size: 60px;
+    }
+    .heroContainer .heroInfo p {
+        font-size: 30px;
+    }
+    
+}
 
     
 
