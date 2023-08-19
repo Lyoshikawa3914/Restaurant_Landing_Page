@@ -36,6 +36,10 @@ const menuAnchor = document.querySelector('#menuAnchor');
  */
 const signUpButton = document.querySelector('.signUp');
 const signInButton = document.querySelector('.signIn');
+
+const signUpButtonSide = document.querySelector('.signUpSide');
+const signInButtonSide = document.querySelector('.signInSide');
+
 const signUpFormContainer = document.querySelector('.signUpFormContainer');
 const signInFormContainer = document.querySelector('.signInFormContainer');
 
@@ -121,10 +125,20 @@ menuAnchor.addEventListener('click', function(){
  * appear.
  */
 signUpButton.addEventListener('click', function() {
+    console.log('click');
     signUpFormContainer.style.transition = '0.4s ease-in';
     signUpFormContainer.style.top = '4%';
 });
 signInButton.addEventListener('click', function() {
+    signInFormContainer.style.transition = '0.4s ease-in';
+    signInFormContainer.style.top = '4%';
+});
+signUpButtonSide.addEventListener('click', function() {
+    console.log('click');
+    signUpFormContainer.style.transition = '0.4s ease-in';
+    signUpFormContainer.style.top = '4%';
+});
+signInButtonSide.addEventListener('click', function() {
     signInFormContainer.style.transition = '0.4s ease-in';
     signInFormContainer.style.top = '4%';
 });

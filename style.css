@@ -31,6 +31,7 @@ footer {
             
         }
         .topNav {
+            
             visibility: hidden;
             height: 0;
             width: 0;
@@ -493,6 +494,16 @@ footer {
 
     
 @media screen and (min-width: 400px) {
+    .heroContainer .logoLanding {
+        align-self: center;
+        
+    }
+    .heroContainer .logoLanding h1 {
+        flex-direction: row;
+        font-size: 40px;
+        
+    }
+
     .navContainer ul .signContainer{
         display: flex;
         height: 30%;
@@ -543,6 +554,8 @@ Desktop version
         width: 100%;
         justify-content: center;
     }
+
+    
     
 }
 
@@ -554,14 +567,18 @@ Desktop version
     .heroContainer .logoLanding h1 {
         font-size: 60px;
     }
+
+    .heroContainer .logoLanding p {
+        font-size: 30px;
+    }
     
-    .heroContainer .heroInfo h2 {
+    /* .heroContainer .heroInfo h2 {
         font-size: 50px;
     }
     .heroContainer .heroInfo p {
         font-size: 30px;
         padding: 10px 10px;
-    }
+    } */
 
     .navContainer .signContainer{
         display: flex;
@@ -602,7 +619,7 @@ Desktop version
 @media screen and (min-width: 900px) {
     .topNav {
         visibility: visible;
-        z-index: 1;
+        z-index: 2;
         position: fixed;
         display: flex;
             
@@ -855,19 +872,23 @@ Desktop version
         font-size: 85px;
     }
 
-    .heroContainer .heroInfo{
+    /* .heroContainer .heroInfo{
         
         padding-left: 70px;
         gap: 20px;
+    } */
+    
+    .heroContainer .logoLanding p {
+        font-size: 30px;
     }
 
-    .heroContainer .heroInfo h2 {
+    /* .heroContainer .heroInfo h2 {
         padding-top: 5%;
         font-size: 60px;
     }
     .heroContainer .heroInfo p {
         font-size: 30px;
-    }
+    } */
 
     .menuContainer {
         margin-top: 0%;
@@ -905,7 +926,9 @@ Desktop version
         visibility: hidden;
     }
 
-    
+    .heroContainer .logoLanding p {
+        font-size: 30px;
+    }
     
 }
 
