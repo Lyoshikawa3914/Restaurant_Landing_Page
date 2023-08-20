@@ -38,17 +38,17 @@ const signUpButton = document.querySelector('.signUp');
 const signInButton = document.querySelector('.signIn');
 
 const signUpButtonSide = document.querySelector('.signUpSide');
-const signInButtonSide = document.querySelector('.signInSide');
-
 const signUpCancelBtn = document.querySelector('.cancelButton');
 const signUpSubmitBtn = document.querySelector('.submitButton');
-
 const signUpFormContainer = document.querySelector('.signUpFormContainer');
-const signInFormContainer = document.querySelector('.signInFormContainer');
-
 const signUpForm = document.querySelector('.signUpForm');
 const cancelSignUp = document.querySelector('.cancelButton');
 const submitSignUp = document.querySelector('#submitSignUpButton');
+
+const signInButtonSide = document.querySelector('.signInSide');
+const signInFormContainer = document.querySelector('.signInFormContainer');
+const signInDesktopCancelBtn = document.querySelector('.signInCancelButton');
+
 
 
 /**
@@ -170,6 +170,18 @@ signUpCancelBtn.addEventListener('click', function(event) {
     console.log('cancelClick');
 
     signUpFormContainer.style.top = '-100%';
+});
+// signInCancelBtn.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     console.log('cancelClick');
+
+//     signUpFormContainer.style.top = '-100%';
+// });
+signInDesktopCancelBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log('cancelClick');
+
+    signInFormContainer.style.top = '-5000%';
 });
 
 
