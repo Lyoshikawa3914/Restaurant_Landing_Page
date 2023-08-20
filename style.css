@@ -28,6 +28,8 @@ footer {
         
         /* disables scrolling when someone presses hambruger menu */
         body.isActive {
+            height: 100%;
+            overflow: hidden;
             
         }
         .topNav {
@@ -72,6 +74,11 @@ footer {
             width: 100%;
             height: 50%;
         }
+
+        .signUpFormContainer .signUpButtonContainer .cancelButton{
+            width: 100%;
+            height: 50%;
+        }
     
         .signInFormContainer {
             position: fixed;
@@ -106,9 +113,16 @@ footer {
             gap: 8px;
             
         }
+        .signInFormContainer .signInButtonContainer .cancelButton{
+            width: 100%;
+            height: 50%;
+            align-self: flex-end;
+            
+        }
+
         .signInFormContainer .signInButtonContainer .submitButton{
             width: 100%;
-            height: 40%;
+            height: 50%;
             align-self: flex-end;
             
         }

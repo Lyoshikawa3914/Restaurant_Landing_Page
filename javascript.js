@@ -40,6 +40,9 @@ const signInButton = document.querySelector('.signIn');
 const signUpButtonSide = document.querySelector('.signUpSide');
 const signInButtonSide = document.querySelector('.signInSide');
 
+const signUpCancelBtn = document.querySelector('.cancelButton');
+const signUpSubmitBtn = document.querySelector('.submitButton');
+
 const signUpFormContainer = document.querySelector('.signUpFormContainer');
 const signInFormContainer = document.querySelector('.signInFormContainer');
 
@@ -160,6 +163,13 @@ signUpForm.addEventListener('submit', function(event) {
     if (password != passwordAgain) {
         alert('Please retype password');
     }
+});
+
+signUpCancelBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log('cancelClick');
+
+    signUpFormContainer.style.top = '-100%';
 });
 
 
