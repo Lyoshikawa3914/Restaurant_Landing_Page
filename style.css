@@ -535,6 +535,23 @@ footer {
     }
 }
 
+@media screen and (min-width: 500px) {
+    .menuContainer .types{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+        background-color: white;
+    }
+    .menuContainer div div p {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .menuContainer div div img {
+        height: 100%;
+    }
+    
+}
+
 /**
 Desktop version
 */
@@ -555,6 +572,7 @@ Desktop version
         justify-content: center;
     }
 
+    
     
     
 }
@@ -615,6 +633,16 @@ Desktop version
     .signUpFormContainer .signUpForm div input{
         font-size: 20px;
     }
+
+    .menuContainer {
+        background-color: white;
+    }
+    footer {
+        margin-bottom: 10%;
+    }
+    
+    
+
 }
 @media screen and (min-width: 900px) {
     .topNav {
@@ -897,6 +925,13 @@ Desktop version
     .menuContainer h2 {
         font-size: 80px;
     }
+
+    footer {
+        margin-bottom: 0;
+    }
+    footer .socialMediaContainer {
+        padding-top: 4%;
+    }
     
 }
 
@@ -929,6 +964,10 @@ Desktop version
     .heroContainer .logoLanding p {
         font-size: 30px;
     }
+    footer .socialMediaContainer {
+        padding-top: 5rem;
+    }
+    
     
 }
 
@@ -990,6 +1029,9 @@ Desktop version
         background-color: rgba(0, 0, 0, 0.1);
 
     }
+    
+    
+   
     
 }
 
