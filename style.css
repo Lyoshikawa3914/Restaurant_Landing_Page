@@ -476,6 +476,7 @@ footer {
             bottom: 20%;
             left: -1000%;  
             border-radius: 2%;
+            transition: 0.4ms ease;
         }
         .foodContainer .upper {
            
