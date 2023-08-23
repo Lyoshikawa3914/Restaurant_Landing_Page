@@ -474,7 +474,7 @@ footer {
             height: 70%;
             width: 90%;
             bottom: 20%;
-            left: 5%;  
+            left: -1000%;  
             border-radius: 2%;
         }
         .foodContainer .upper {
